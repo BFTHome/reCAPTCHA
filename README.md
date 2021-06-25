@@ -1,6 +1,7 @@
 # reCAPTCHA
 RECAPTCHA
 ####################
+
 国外很多网站都使用了 Google reCaptcha 验证码。reCaptcha 对于国外用户非常的友好，但是…对于国内用户就不怎么友好了。
 究其原因，原因是国内网络全线屏蔽Google 服务，导致 reCaptcha 完全加载不出来。
 这样，国内玩家就无法在对应的网站进行下一步操作了。本方案可以解决 reCaptcha 无法加载的问题。
@@ -30,7 +31,7 @@ RECAPTCHA
 好了，关闭这个页面。然后就可以了，现在 reCaptcha 应该可以正常显示了。
 
 原理
-这个插件将 reCaptcha 的调用(www.google.com/recaptcha)直接跳转到了 reCaptcha 国内镜像上面(recaptcha.net/recaptcha)。
+这个插件将 reCaptcha 的调用 (www.google.com/recaptcha) 直接跳转到了 reCaptcha 国内镜像上面 (recaptcha.net/recaptcha)。
 由于 reCaptcha 国内镜像是可以直接连接的，而且还是 Google 官方的镜像，所以就能正常加载了。(这个和 xmdhs 的解决方法原理是一样的)
 
 另外，这个方案还会修改页面的 Content-Security-Policy(内容安全政策) 设置，使得有 Content-Security-Policy 的页面的 reCaptcha 能正常加载。
